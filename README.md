@@ -9,11 +9,7 @@ This repository is official implementation of [**We Don't Need No Adam, All We N
 
 ---
 ## **How to use?!**
-<font size = 4>Run EM-stellar using the Fiji.app, segmentation results and ground-truth images directories:
 
-### Examples:
-<font size = 4>Run EM-stellar using the Fiji.app, segmentation results and ground-truth images directories:
-* Linux/Mac:
 ```python
 from eve import EVE
 ...
