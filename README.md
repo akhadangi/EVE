@@ -13,7 +13,8 @@ This repository is official implementation of [**We Don't Need No Adam, All We N
 ```python
 from eve import EVE
 ...
-model.compile(optimizer = EVE(learning_rate_1 = 0.001, learning_rate_2 = 0.0004), loss = ..., metrics = ...)
+model.compile(optimizer = EVE(learning_rate_1 = 0.001, learning_rate_2 = 0.0004),
+              loss = ..., metrics = ...)
 history = model.fit(...)
 ...
 ```
