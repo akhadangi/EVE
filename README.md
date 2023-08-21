@@ -3,7 +3,7 @@ This repository is official implementation of [**We Don't Need No Adam, All We N
 
 ---
 
-<font size = 4>EVE is equipped with two learning rates, where the 1st momentum is being obtained using short-term and long-term momenta, and 2nd momentum is the result of a residual learning paradigm. We have included all the interactive figures under the "figures" directory. The users and the community are encouraged to download these files and visualise the behaviour of the Adam optimiser vs. EVE in more granular detail.
+<font size = 4>EVE is equipped with two learning rates, where the 1st momentum is being obtained using short-term and long-term momenta, and 2nd momentum is the result of a residual learning paradigm. We have included all the interactive figures under the ```figures``` directory. The users and the community are encouraged to download these files and visualise the behaviour of the Adam optimiser vs. EVE in more granular detail.
 
 
 
