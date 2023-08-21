@@ -9,7 +9,7 @@ This repository is official implementation of [**We Don't Need No Adam, All We N
 
 ---
 ## **How to use?!**
-<font size = 4>Assuming you have built a TensorFlow model named "model", you will be able to compile the model using EVE as follows:
+<font size = 4>Assuming you have built a TensorFlow model named ```model```, you will be able to compile the model using EVE as follows:
 ```python
 from eve import EVE
 ...
