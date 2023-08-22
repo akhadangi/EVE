@@ -18,3 +18,31 @@ model.compile(optimizer = EVE(learning_rate_1 = 0.001, learning_rate_2 = 0.0004)
 history = model.fit(...)
 ...
 ```
+
+---
+### **side note for TPU usage**
+<font size = 4>We have made the flower classification dataset available on GCS bucket. Follow the steps below to load the data into your Colab Notebook:
+```python
+# Data access ...
+GCS_DS_PATH = f"gs://flower-tpu"
+
+# configuration ...
+IMAGE_SIZE = [224, 224]
+                       
+img_size=224
+EPOCHS = epochs
+BATCH_SIZE = 16 * strategy.num_replicas_in_sync
+
+GCS_PATH_SELECT = { # available image sizes
+    192: GCS_DS_PATH + '/tfrecords-jpeg-192x192',
+    224: GCS_DS_PATH + '/tfrecords-jpeg-224x224',
+    331: GCS_DS_PATH + '/tfrecords-jpeg-331x331',
+    512: GCS_DS_PATH + '/tfrecords-jpeg-512x512'
+}
+GCS_PATH = GCS_PATH_SELECT[IMAGE_SIZE[0]]
+
+# Filaments ...
+TRAINING_FILENAMES = tf.io.gfile.glob(GCS_PATH + '/train/*.tfrec')
+VALIDATION_FILENAMES = tf.io.gfile.glob(GCS_PATH + '/val/*.tfrec')
+TEST_FILENAMES = tf.io.gfile.glob(GCS_PATH + '/test/*.tfrec') # predictions on this dataset should be submitted for the competition
+```
