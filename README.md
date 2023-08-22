@@ -1,5 +1,5 @@
 # EVE
-This repository is official implementation of [**We Don't Need No Adam, All We Need Is EVE: On The Variance of Dual Learning Rate And Beyond**](https://arxiv.org/) using TensorFlow.
+This repository is official implementation of [**We Don't Need No Adam, All We Need Is EVE: On The Variance of Dual Learning Rate And Beyond**](https://arxiv.org/abs/2308.10740) using TensorFlow.
 
 ---
 
