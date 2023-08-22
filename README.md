@@ -22,6 +22,7 @@ history = model.fit(...)
 ---
 ### **side note for TPU usage**
 <font size = 4>We have made the flower classification dataset available on GCS bucket. Follow the steps below to load the data into your Colab Notebook:
+<font size = 3>Initialize TPU: 
 ```python
 import tensorflow as tf
 # Detect hardware, return appropriate distribution strategy
@@ -37,7 +38,9 @@ if tpu:
     strategy = tf.distribute.experimental.TPUStrategy(tpu)
 else:
     strategy = tf.distribute.get_strategy()
-
+```
+<font size = 3>Load the data from GCS bucket: 
+```python
 # Data access ...
 GCS_DS_PATH = f"gs://flower-tpu"
 
