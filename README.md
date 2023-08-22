@@ -28,7 +28,7 @@ import tensorflow as tf
 # Detect hardware, return appropriate distribution strategy
 # We aim to use TPU
 try:
-    tpu = tf.distribute.cluster_resolver.TPUClusterResolver()  # TPU detection. No parameters necessary if TPU_NAME environment variable is set. On Kaggle this is always the case.
+    tpu = tf.distribute.cluster_resolver.TPUClusterResolver()  # TPU detection.
     print('Running on TPU ', tpu.master())
 except ValueError:
     tpu = None
