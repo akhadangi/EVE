@@ -21,7 +21,7 @@ history = model.fit(...)
 
 ---
 ### **side note for TPU usage**
-<font size = 4>We have made the flower classification dataset available on GCS bucket. Follow the steps below to load the data into your Colab Notebook:
+<font size = 4>We have made the flower classification dataset available on GCS bucket. Follow the steps below to load the data into your Colab Notebook.
 <font size = 3>Initialize TPU: 
 ```python
 import tensorflow as tf
