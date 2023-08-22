@@ -24,7 +24,7 @@ class EVE(Optimizer):
     has dual learning rates.
 
     According to
-    [Khadangi A., 2023](http://arxiv.org/),
+    [Khadangi A., 2023](https://arxiv.org/abs/2308.10740),
 
     Args:
       learning_rate_1: A `tf.Tensor`, floating point value, a schedule that is a
@@ -60,7 +60,7 @@ class EVE(Optimizer):
       {{base_optimizer_keyword_args}}
 
     Reference:
-      - [Khadangi A., 2014](http://arxiv.org)
+      - [Khadangi A., 2023](https://arxiv.org/abs/2308.10740)
       - [Reddi et al., 2018](
           https://openreview.net/pdf?id=ryQu7f-RZ) for `amsgrad`.
 
