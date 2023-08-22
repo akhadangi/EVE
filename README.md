@@ -48,7 +48,6 @@ GCS_DS_PATH = f"gs://flower-tpu"
 # We have used 224x224 pixels, options are one of either 192x192, 224x224, 331x331, 512x512
 IMAGE_SIZE = [224, 224]
                        
-img_size = IMAGE_SIZE[0]
 EPOCHS = epochs
 BATCH_SIZE = 16 * strategy.num_replicas_in_sync
 
