@@ -259,5 +259,3 @@ class EVE(Optimizer):
             }
         )
         return config
-
-  
