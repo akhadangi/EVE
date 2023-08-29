@@ -62,5 +62,5 @@ GCS_PATH = GCS_PATH_SELECT[IMAGE_SIZE[0]]
 # FileNames ...
 TRAINING_FILENAMES = tf.io.gfile.glob(GCS_PATH + '/train/*.tfrec')
 VALIDATION_FILENAMES = tf.io.gfile.glob(GCS_PATH + '/val/*.tfrec')
-TEST_FILENAMES = tf.io.gfile.glob(GCS_PATH + '/test/*.tfrec') # predictions on this dataset should be submitted for the competition
+TEST_FILENAMES = tf.io.gfile.glob(GCS_PATH + '/test/*.tfrec')
 ```
